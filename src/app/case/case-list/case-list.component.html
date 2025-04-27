@@ -1,0 +1,9 @@
+<h2>Case List</h2>
+<ul class="case">
+  <li *ngFor="let case of case$ | async"
+    [class.selected]="case.id === selectedId">
+    <a [routerLink]="['/case', case.id]">
+      <span class="badge">{{ case.id }}</span>{{ case.name }}
+    </a>
+  </li>
+</ul>

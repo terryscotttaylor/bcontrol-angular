@@ -1,0 +1,9 @@
+<h2>Lookup Types</h2>
+<ul>
+  <li *ngFor="let lookupType of lookupTypes$ | async"
+    [class.selected]="lookupType === selectedId">
+    <a [routerLink]="['./', lookupType]">
+      <span class="badge">&nbsp;</span>{{ lookupType }}
+    </a>
+  </li>
+</ul>

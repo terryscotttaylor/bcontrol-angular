@@ -1,0 +1,8 @@
+<h2>Permission Names</h2>
+<ul class="permissionname">
+  <li *ngFor="let permissionname of permissionname$ | async">
+    <a [routerLink]="['./', permissionname]">
+      <span class="badge">&nbsp;</span>{{ permissionname }}
+    </a>
+  </li>
+</ul>

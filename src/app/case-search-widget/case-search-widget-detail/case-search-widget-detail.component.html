@@ -1,0 +1,52 @@
+<h2>Case {{ case.id }} - {{ case.name }}</h2>
+  <div style="width:98%;" *ngIf="case$ | async as case">
+  <h3 style="background-color:silver;width:50%;">Case Info {{ case.id }} - {{ case.name }}</h3>
+
+<table>
+  	  <tr>
+    	<td style="text-align:right"><label>Id: </label></td>
+    	<td style="text-align:left">{{ case.id }}</td>
+	  </tr>
+	  <tr>
+		<td style="text-align:right"><label>Name: </label></td>
+		<td style="text-align:left"><input [(ngModel)]="case.name" placeholder="name"/></td>
+	  </tr>
+	  <tr>
+    	<td style="text-align:right"><label>Petition Date: </label></td>
+		<td style="text-align:left"><input [(ngModel)]="case.petitionDate"/></td>
+	  </tr>
+	  <tr>
+    	<td style="text-align:right"><label>Intent: </label></td>
+		<td style="text-align:left"><input [(ngModel)]="case.intent"/></td>
+	  </tr>
+	  <tr>
+    	<td style="text-align:right"><label>Jurisdiction: </label></td>
+	  	<td style="text-align:left"><input [(ngModel)]="jurisdiction$.name"/></td>
+	  </tr>
+	  <tr>
+    	<td style="text-align:right"><label>Conversion Date: </label></td>
+		<td style="text-align:left"><input [(ngModel)]="case.conversionDate"/></td>
+	  </tr>
+	  <tr>
+    	<td style="text-align:right"><label>341 Meeting Date: </label></td>
+		<td style="text-align:left"><input [(ngModel)]="case.threeFortyOneMeetingDate"/></td>
+	  </tr>
+	  <tr>
+    	<td style="text-align:right"><label>Objection to Discharge: </label></td>
+		<td style="text-align:left"><input [(ngModel)]="case.objectionToDischarge"/></td>
+	  </tr>
+	  <tr>
+    	<td style="text-align:right"><label>Confirmation Hearing: </label></td>
+		<td style="text-align:left"><input [(ngModel)]="case.confirmationHearing"/></td>
+	  </tr>
+	  <tr>
+    	<td style="text-align:right"><label>planConfirmationDate: </label></td>
+		<td style="text-align:left"><input [(ngModel)]="case.planConfirmationDate"/></td>
+	  </tr>
+</table>
+
+
+
+</div>
+
+

@@ -1,0 +1,49 @@
+<h2>Jurisdiction</h2>
+<div *ngIf="jurisdiction$ | async as jurisdiction">
+  <h3>"{{ jurisdiction.name }}"</h3>
+  <table>
+  	<tr>
+    	<td style="text-align:right"><label class="twoColumnLeft">Name: </label></td>
+         <td style="text-align:left"><input  class="twoColumnLeft"[(ngModel)]="jurisdiction.name" placeholder="name"/></td>
+  </tr>
+  	<tr>
+    	<td style="text-align:right"><label class="twoColumnLeft">Clerk Pacer: </label></td>
+        <td style="text-align:left"><input  class="twoColumnLeft"[(ngModel)]="jurisdiction.clerkPacer" placeholder=""/></td>
+  </tr>
+  	<tr>
+    	<td style="text-align:right"><label class="twoColumnLeft">Value Region: </label></td>
+         <td style="text-align:left"><input  class="twoColumnRight" [(ngModel)]="jurisdiction.valueRegion" placeholder=""/></td>
+  </tr>
+  	<tr>
+    	<td style="text-align:right"><label>POC Calculation: </label></td>
+         <td style="text-align:left"><input [(ngModel)]="jurisdiction.pocCalc" placeholder=""/></td>
+  </tr>
+  	<tr>
+    	<td style="text-align:right"><label>POC Fixed Interest: </label></td>
+         <td style="text-align:left"><input [(ngModel)]="jurisdiction.pocFixedInt" placeholder=""/></td>
+  </tr>
+  	<tr>
+    	<td style="text-align:right"><label>Pacer URL: </label></td>
+         <td style="text-align:left"><input [(ngModel)]="jurisdiction.pacerUrl" placeholder=""/></td>
+  </tr>
+  	<tr>
+    	<td style="text-align:right"><label>ECF URL: </label></td>
+         <td style="text-align:left"><input [(ngModel)]="jurisdiction.ecfUrl" placeholder=""/></td>
+  </tr>
+  	<tr>
+    	<td style="text-align:right"><label>Rules URL: </label></td>
+         <td style="text-align:left"><input [(ngModel)]="jurisdiction.rulesUrl" placeholder=""/></td>
+  </tr>
+  	<tr>
+    	<td style="text-align:right"><label>Valid for cases: </label></td>
+         <td style="text-align:left"><input [(ngModel)]="jurisdiction.validForCaseFlag" placeholder=""/></td>
+  </tr>
+  	<tr>
+    	<td style="text-align:right"><label>Years to required to retain documents: </label></td>
+        <td style="text-align:left"><input [(ngModel)]="jurisdiction.numberYearsKeepDocument" placeholder=""/></td>
+  </tr>
+  </table>
+  <p>
+    <button (click)="gotoJurisdiction(jurisdiction.jurisdictionId)">Back</button>
+  </p>
+</div>

@@ -1,0 +1,13 @@
+<h2>Permission Levels</h2>
+<div *ngIf="permissionlevel$ | async as permissionlevel">
+  <h3>"{{ permissionlevel }}"</h3>
+  <table>
+  	<tr>
+    <td style="text-align:right"><label>Name: </label></td>
+    <td style="text-align:left"><input [(ngModel)]="permissionlevel" placeholder="name"/></td>
+  </tr>
+  </table>
+  <p>
+    <button (click)="gotoPermissionLevels(permissionlevel)">Back</button>
+  </p>
+</div>

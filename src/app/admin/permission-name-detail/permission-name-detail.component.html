@@ -1,0 +1,12 @@
+<h2>Permission Names</h2>
+<div *ngIf="permissionname$ | async as permissionname">
+  <h3>"{{ permissionname }}"</h3>
+
+  <div>
+    <label>Name: </label>
+    <input [(ngModel)]="permissionname" placeholder="name"/>
+  </div>
+  <p>
+    <button (click)="gotoPermissionNames(permissionname)">Back</button>
+  </p>
+</div>

@@ -1,0 +1,149 @@
+/* Master Styles */
+h1 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2, h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+body {
+  margin: .5em;
+}
+body, input[text], button {
+  color: #424242;
+  font-family: Cambria, Georgia;
+}
+
+twoColumnLeft
+{
+	width:48%;
+	text-align:right;
+}
+twoColumnRight
+{
+	width:48%;
+	text-align:left;
+}
+
+a {
+  cursor: pointer;
+  cursor: hand;
+}
+button {
+  font-family: Arial;
+  color:#424242;
+  background-color: #c5bd99;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+}
+button:hover {
+  background-color: #424242;
+  color:#c5bd99;
+}
+button:disabled {
+  background-color: #424242;
+  color: #fff;
+  cursor: auto;
+}
+
+/* Navigation link styles */
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  color:#424242;
+  background-color: #c5bd99;
+  border-radius: 4px;
+}
+nav a:visited, a:link {
+  color: #000;
+}
+nav a:hover {
+  background-color: #424242;
+  color:#c5bd99;
+}
+nav a.active {
+  
+}
+input {margin:10px;}
+label {margin:10px;}
+th {padding:15px;background-color:#c5bd99;color:black;}
+tr {padding:15px;}
+
+
+/* everywhere else */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.textLeft
+{
+	width:48%;
+	text-align:right;
+}
+.twoColumnRight
+{
+	width:48%;
+	text-align:left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

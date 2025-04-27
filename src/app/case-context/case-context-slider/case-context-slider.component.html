@@ -1,0 +1,26 @@
+<div style="width:250px;border:1px solid #c5bd99;padding:10px;margin:5px;border-radius:4px;background-color:#c5bd99" *ngIf="context$ | async as pcontext">
+
+  <div class="contextSliderOddRow"><label>Loan Number</label></div>
+  <div class="contextSliderEvenRow">{{ context.loanNumber }}</div>
+
+  <div class="contextSliderOddRow"><label>File Number</label></div>
+  <div class="contextSliderEvenRow">{{ context.fileNumber }}</div>
+
+  <div class="contextSliderOddRow"><label>Case Status</label></div>
+  <div class="contextSliderEvenRow">{{ context.caseStatus }}</div>
+
+  <div class="contextSliderOddRow"><label>Claim Type</label></div>
+  <div class="contextSliderEvenRow">{{ context.claimType }}</div>
+
+  <div class="contextSliderOddRow"><label>Lien Avoidable</label></div>
+  <div class="contextSliderEvenRow">{{ context.lienAvoidable }}</div>
+
+  <div class="contextSliderOddRow"><label>Chapter</label></div>
+  <div class="contextSliderEvenRow">{{ context.chapter }}</div>
+
+  <div class="contextSliderOddRow"><label>Case Number</label></div>
+  <div class="contextSliderEvenRow">{{ context.caseNumber }}</div>
+
+  <div class="contextSliderOddRow"><label>Jurisdiction</label></div>
+  <div class="contextSliderEvenRow">{{ context.jurisdiction }}</div>
+</div>

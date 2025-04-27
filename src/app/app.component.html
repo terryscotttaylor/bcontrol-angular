@@ -1,0 +1,63 @@
+
+<img style="float:left;clear:none;" src="https://www.bankruptcycontrol.com/img/login_logo.gif">
+<style>
+nav {display:inline}
+div nav {display:block}
+</style>
+
+
+
+	<div style="float:right;clear:none;margin:5px;;width:32%;border:1px solid silver;text-align:center;padding:7px;">
+		<nav>
+			 <p style="margin:3px;">Ward Holliday</p>
+			 <a style="margin:3px;" routerLink="/admin" routerLinkActive="active">Admin</a>
+			 <a style="margin:3px;" routerLink="/admin" routerLinkActive="active">Help</a>
+			 <a style="margin:3px;" routerLink="/admin" routerLinkActive="active">My Profile</a>
+			 <a style="margin:3px;" routerLink="/login" routerLinkActive="active">Logout</a>
+		</nav>
+	</div>
+	<div style="width:60%;margin-right:25px;float:right;clear:none;text-align:center;">
+		 <nav>
+		 <!--
+		  <a routerLink="/crisis-center" routerLinkActive="active">Crisis Center</a>
+		  <a routerLink="/permission-levels" routerLinkActive="active">Permission Level</a>
+		  <a routerLink="/permission-names" routerLinkActive="active">Permission Name</a>
+		  <a routerLink="/superheroes" routerLinkActive="active">Heroes</a>-->
+		  <a routerLink="/admin" routerLinkActive="active">Add Case</a>
+		  <a routerLink="/login" routerLinkActive="active">Search</a>
+		  <a routerLink="/login" routerLinkActive="active">Reports</a>
+		  <a routerLink="/login" routerLinkActive="active">Exhibits</a>
+		  <a routerLink="/login" routerLinkActive="active">Queue Items</a>
+		  <!--<a [routerLink]="[{ outlets: { popup: ['compose'] } }]">Contact</a>-->
+		  </nav>
+
+	</div>
+	<div style="border-radius: 0px 0px 0px 4px;float:left;clear:left;width:99%;padding:5px;corner-radius:3px;color:white;background-color:#701112">
+		<case-context-banner></case-context-banner>
+	</div>
+	<div style="width:9%;height:70%;margin-right:10px;float:right;clear:none;">
+		<case-context-slider></case-context-slider>
+	</div>
+	<div style="width:9%;height:100%;float:left;clear:none;padding:5px;">
+	  <span style="margin:5px; padding:5px 10px;font-size:.7em;">Search by</span>
+	  <select name="searchBy">
+	  	<option value="loanNumber">Loan #</option>
+	  	<option value="fileNumber">File #</option>
+	  	<option value="courtCaseNumber">Court Case #</option>
+	  	<option value="socSecNumber">SSN #</option>
+	  </select>
+	  <input style="margin:5px; padding:5px 10px;width:80%" type="text" name="searchByCaseFile">
+	  <span style="margin:5px; padding:5px 10px;font-size:.7em;">Recent Cases</span>
+	  <div>
+	  	<a style="float:left;clear:both;" routerLink="/case-summary/12" routerLinkActive="active">Carter, J 345234523</a>
+	  </div>
+	  <a style="float:left;clear:both;" routerLink="/crisis-center" routerLinkActive="active">Crisis Center</a>
+	  <a style="float:left;clear:both;"  routerLink="/permission-levels" routerLinkActive="active">Permission Level</a>
+	  <a style="float:left;clear:both;"  routerLink="/permission-names" routerLinkActive="active">Permission Name</a>
+	</div>
+<div  style="float:left;clear:none;width:75%;height:85%;margin-top:25px;margin-left:25px;">
+<div [@routeAnimation]="getAnimationData(routerOutlet)">
+  <router-outlet #routerOutlet="outlet"></router-outlet>
+</div>
+<router-outlet name="popup"></router-outlet>
+

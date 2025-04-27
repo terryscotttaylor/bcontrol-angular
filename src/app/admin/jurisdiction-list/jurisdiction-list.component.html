@@ -1,0 +1,8 @@
+<h2>Jurisdictions</h2>
+<ul class="jurisdiction">
+  <li *ngFor="let jurisdiction of jurisdiction$ | async">
+    <a [routerLink]="['./', jurisdiction.jurisdictionId]">
+      <span class="badge">&nbsp;</span>{{ jurisdiction.name }}
+    </a>
+  </li>
+</ul>

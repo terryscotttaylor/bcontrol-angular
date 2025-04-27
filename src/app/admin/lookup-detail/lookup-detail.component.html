@@ -1,0 +1,31 @@
+<h2>Lookups</h2>
+  <ul>
+    <li *ngFor="let lookup of lookups$">
+      <table>
+	    <tr>
+	      <td style="text-align:right"><label>Value: </label></td>
+	      <td style="text-align:left"><input [(ngModel)]="lookup.value" placeholder="value"/></td>
+	    </tr>
+	    <tr>
+		  <td style="text-align:right"><label>Id: </label></td>
+		  <td style="text-align:left"><input [(ngModel)]="lookup.id" placeholder="type"/></td>
+	    </tr>
+	    <tr>
+		  <td style="text-align:right"><label>Lookup Type: </label></td>
+		  <td style="text-align:left"><input [(ngModel)]="lookup.lookupType" placeholder="type"/></td>
+	    </tr>
+	    <tr>
+		  <td style="text-align:right"><label>Calculation Method Code: </label></td>
+		  <td style="text-align:left"><input [(ngModel)]="lookup.calculationmethodCode" placeholder=""/></td>
+	    </tr>
+	    <tr>
+		  <td style="text-align:right"><label>Calculation Method: </label></td>
+		  <td style="text-align:left"><input [(ngModel)]="lookup.calculationmethod" placeholder=""/></td>
+	    </tr>
+	    <tr>
+		  <td style="text-align:right"><label>Sort Order: </label></td>
+		  <td style="text-align:left"><input [(ngModel)]="lookup.sortOrder" placeholder=""/></td>
+	    </tr>
+  </table>
+    </li>
+</ul>

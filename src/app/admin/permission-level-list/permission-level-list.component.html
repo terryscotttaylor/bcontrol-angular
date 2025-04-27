@@ -1,0 +1,9 @@
+<h2>Permission Levels</h2>
+<ul class="permissionlevel">
+  <li *ngFor="let permissionlevel of permissionlevel$ | async"
+    [class.selected]="permissionlevel === selectedId">
+    <a [routerLink]="['./', permissionlevel]">
+      <span class="badge">&nbsp;</span>{{ permissionlevel }}
+    </a>
+  </li>
+</ul>

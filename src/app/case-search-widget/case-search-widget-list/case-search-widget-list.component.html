@@ -1,0 +1,27 @@
+	  <span style="margin:5px; padding:5px 10px;font-size:.7em;">Search by</span>
+	  <select name="searchBy">
+	  	<option value="loanNumber">Loan #</option>
+	  	<option value="fileNumber">File #</option>
+	  	<option value="courtCaseNumber">Court Case #</option>
+	  	<option value="socSecNumber">SSN #</option>
+	  </select>
+	  <input style="margin:5px; padding:5px 10px;width:80%" type="text" name="searchByCaseFile">
+	  <span style="margin:5px; padding:5px 10px;font-size:.7em;">Recent Cases</span>
+	  <div>
+	  	<a style="float:left;clear:both;" routerLink="/case" routerLinkActive="active">Carter, J 345234523</a>
+	  </div>
+	  <a style="float:left;clear:both;" routerLink="/crisis-center" routerLinkActive="active">Crisis Center</a>
+	  <a style="float:left;clear:both;"  routerLink="/permission-levels" routerLinkActive="active">Permission Level</a>
+	  <a style="float:left;clear:both;"  routerLink="/permission-names" routerLinkActive="active">Permission Name</a>
+
+	  <div>
+	  	<li *ngFor="let case of caseSearchResult$ | async">
+
+	  		<a [routerLink]="['/case', case.id]">
+	        	<span class="badge">{{ case.id }}</span>{{ case.name }}
+			</a>
+  		</li>
+	  </div>
+
+
+</div>

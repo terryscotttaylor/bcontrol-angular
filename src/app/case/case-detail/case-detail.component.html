@@ -1,0 +1,203 @@
+<h2>Case {{ case.id }} - {{ case.name }}</h2>
+  <div style="width:98%;margin:15px;margin-bottom:25px" *ngIf="caseSummary$ | async as case">
+     <div style="float:left;clear:none;width:46%;margin-left:3%;margin-right:3%;">
+	  <div style="width:100%;margin-top:10px; float:left;clear:none;">
+
+		<table style="border:1px solid silver;WIDTH:100%;border-radius:2px;border-spacing:0px;">
+			<tr>
+			<th colspan="2" style="text-align:left;margin-block-start:0px;">Case Info {{ case.id }} - {{ case.name }}</th>
+			</tr>
+			  <tr>
+				<td style="text-align:right"><label>Id: </label></td>
+				<td style="text-align:left">{{ case.id }}</td>
+			  </tr>
+			  <tr>
+				<td style="text-align:right"><label>Name: </label></td>
+				<td style="text-align:left"><input [(ngModel)]="case.name" placeholder="name"/></td>
+			  </tr>
+			  <tr>
+				<td style="text-align:right"><label>Petition Date: </label></td>
+				<td style="text-align:left"><input [(ngModel)]="case.petitionDate"/></td>
+			  </tr>
+			  <tr>
+				<td style="text-align:right"><label>Intent: </label></td>
+				<td style="text-align:left"><input [(ngModel)]="case.intent"/></td>
+			  </tr>
+			  <tr>
+				<td style="text-align:right"><label>Jurisdiction: </label></td>
+				<td style="text-align:left"><input [(ngModel)]="case.jurisdictionId"/></td>
+			  </tr>
+			  <tr>
+				<td style="text-align:right"><label>Conversion Date: </label></td>
+				<td style="text-align:left"><input [(ngModel)]="case.conversionDate"/></td>
+			  </tr>
+			  <tr>
+				<td style="text-align:right"><label>341 Meeting Date: </label></td>
+				<td style="text-align:left"><input [(ngModel)]="case.threeFortyOneMeetingDate"/></td>
+			  </tr>
+			  <tr>
+				<td style="text-align:right"><label>Objection to Discharge: </label></td>
+				<td style="text-align:left"><input [(ngModel)]="case.objectionToDischarge"/></td>
+			  </tr>
+			  <tr>
+				<td style="text-align:right"><label>Confirmation Hearing: </label></td>
+				<td style="text-align:left"><input [(ngModel)]="case.confirmationHearing"/></td>
+			  </tr>
+			  <tr>
+				<td style="text-align:right"><label>planConfirmationDate: </label></td>
+				<td style="text-align:left"><input [(ngModel)]="case.planConfirmationDate"/></td>
+			  </tr>
+		</table>
+	</div>
+
+
+
+
+
+
+
+
+	 <div style="width:100%;float:left;clear:none;margin-top:10px;">
+
+				<table style="border:1px solid silver;WIDTH:100%;border-radius:2px;border-spacing:0px;">
+				<tr>
+							<th colspan="2" style="text-align:left;margin-block-start:0px;">Action</th>
+			</tr>
+					  <tr>
+						<td style="text-align:right"><label>Opened Date: </label></td>
+						<td style="text-align:left"><input [(ngModel)]="case.openedDate"/></td>
+					  </tr>
+					  <tr>
+						<td style="text-align:right"><label>POC Bar Date: </label></td>
+						<td style="text-align:left"><input [(ngModel)]="case.pocBarDate"/></td>
+					  </tr>
+					  <tr>
+						<td style="text-align:right"><label>POC Sent Date: </label></td>
+						<td style="text-align:left"><input [(ngModel)]="case.pocSentDate"/></td>
+					  </tr>
+					  <tr>
+						<td style="text-align:right"><label>POC Filed Date: </label></td>
+						<td style="text-align:left"><input [(ngModel)]="case.pocFiledDate"/></td>
+					  </tr>
+					  <tr>
+						<td style="text-align:right"><label>POC Amended Date: </label></td>
+						<td style="text-align:left"><input [(ngModel)]="case.pocAmendedDate"/></td>
+					  </tr>
+					  <tr>
+						<td style="text-align:right"><label>NOA Filed Date: </label></td>
+						<td style="text-align:left"><input [(ngModel)]="case.noaFiledDate"/></td>
+					  </tr>
+					  <tr>
+						<td style="text-align:right"><label>Reaff Sent Date: </label></td>
+						<td style="text-align:left"><input [(ngModel)]="case.reaffSentDate"/></td>
+					  </tr>
+					  <tr>
+						<td style="text-align:right"><label>Reaff Filed Date: </label></td>
+						<td style="text-align:left"><input [(ngModel)]="case.reaffFiledDate"/></td>
+					  </tr>
+					  <tr>
+						<td style="text-align:right"><label>Reaff Recision Date: </label></td>
+						<td style="text-align:left"><input [(ngModel)]="case.reaffRecisionDate"/></td>
+					  </tr>
+					  <tr>
+						<td style="text-align:right"><label>Motion to Redeem Date: </label></td>
+						<td style="text-align:left"><input [(ngModel)]="case.motionToRedeemDate"/></td>
+					  </tr>
+				</table>
+	</div>
+	</div>
+
+	<div style="float:left;clear:none;width:46%">
+	  <div style="width:100%;float:left;clear:none;margin-top:10px;">
+
+				<table style="border:1px solid silver;WIDTH:100%;border-radius:2px;border-spacing:0px;">
+					<tr>
+						<th colspan="2" style="text-align:left;margin-block-start:0px;">Litigation</th>
+					</tr>
+					  <tr>
+						<td style="text-align:right"><label>MFR Filed Date: </label></td>
+						<td style="text-align:left"><input [(ngModel)]="case.mfrFiledDate"/></td>
+					  </tr>
+					  <tr>
+						<td style="text-align:right"><label>MFR Hearing Date: </label></td>
+						<td style="text-align:left"><input [(ngModel)]="case.mfrHearingDate" /></td>
+					  </tr>
+					  <tr>
+						<td style="text-align:right"><label>Codebtor MFR Filed Date: </label></td>
+						<td style="text-align:left"><input [(ngModel)]="case.codebtorMfrFiledDate"/></td>
+					  </tr>
+					  <tr>
+						<td style="text-align:right"><label>Plan Objection Date: </label></td>
+						<td style="text-align:left"><input [(ngModel)]="case.planObjectionDate"/></td>
+					  </tr>
+
+				</table>
+	</div>
+
+	<div style="width:100%;float:left;clear:none;margin-top:10px;">
+					<table style="border:1px solid silver;WIDTH:100%;border-radius:2px;border-spacing:0px;">
+						<tr>
+							<th colspan="2" style="text-align:left;margin-block-start:0px;">Closing</th>
+						</tr>
+						  <tr>
+							<td style="text-align:right"><label>OTS Date: </label></td>
+							<td style="text-align:left"><input [(ngModel)]="case.otsDate"/></td>
+						  </tr>
+						  <tr>
+							<td style="text-align:right"><label>Codebtor OTS Date: </label></td>
+							<td style="text-align:left"><input [(ngModel)]="case.coDebtorOTSDate" /></td>
+						  </tr>
+						  <tr>
+							<td style="text-align:right"><label>Codebtor MFR Filed Date: </label></td>
+							<td style="text-align:left"><input [(ngModel)]="case.codebtorMfrFiledDate"/></td>
+						  </tr>
+						  <tr>
+							<td style="text-align:right"><label>Agreed Order Date: </label></td>
+							<td style="text-align:left"><input [(ngModel)]="case.agreedOrderDate"/></td>
+						  </tr>
+						  <tr>
+							<td style="text-align:right"><label>Discharge Date: </label></td>
+							<td style="text-align:left"><input [(ngModel)]="case.dischargeDate"/></td>
+						  </tr>
+						  <tr>
+							<td style="text-align:right"><label>TNAR Date: </label></td>
+							<td style="text-align:left"><input [(ngModel)]="case.tnarDate"/></td>
+						  </tr>
+						  <tr>
+							<td style="text-align:right"><label>Dismissal Date: </label></td>
+							<td style="text-align:left"><input [(ngModel)]="case.dismissalDate"/></td>
+						  </tr>
+
+					</table>
+	</div>
+
+	<div style="width:100%;float:left;clear:none;margin-top:10px;">
+					<table style="border:1px solid silver;WIDTH:100%;border-radius:2px;border-spacing:0px;">
+						<tr>
+							<th colspan="2" style="text-align:left;margin-block-start:0px;">Litigation</th>
+						</tr>
+						  <tr>
+							<td style="text-align:right"><label>MFR Filed Date: </label></td>
+							<td style="text-align:left"><input [(ngModel)]="case.mfrFiledDate"/></td>
+						  </tr>
+						  <tr>
+							<td style="text-align:right"><label>MFR Hearing Date: </label></td>
+							<td style="text-align:left"><input [(ngModel)]="case.mfrHearingDate" /></td>
+						  </tr>
+						  <tr>
+							<td style="text-align:right"><label>Codebtor MFR Filed Date: </label></td>
+							<td style="text-align:left"><input [(ngModel)]="case.codebtorMfrFiledDate"/></td>
+						  </tr>
+						  <tr>
+							<td style="text-align:right"><label>Plan Objection Date: </label></td>
+							<td style="text-align:left"><input [(ngModel)]="case.planObjectionDate"/></td>
+						  </tr>
+
+					</table>
+	</div>
+
+    </div>
+
+</div>
+
+

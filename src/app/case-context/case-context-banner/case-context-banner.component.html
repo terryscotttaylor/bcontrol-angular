@@ -1,0 +1,6 @@
+<div *ngIf="context$ | async as context">
+	<span style="padding:0px 35px 0px 5px;">Client: {{  context.client  }}</span>
+	<span style="padding:0px 35px 0px 5px;">Client Contact:  {{  context.clientContact  }}</span>
+	<span style="padding:0px 35px 0px 5px;">Debtor:  {{  context.debtor  }}</span>
+	<span style="padding:0px 35px 0px 5px;">Admin:  {{  context.admin  }}</span>
+</div>
